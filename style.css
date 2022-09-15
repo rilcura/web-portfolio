@@ -90,28 +90,28 @@ html {
 }
 
 .c1 {
-  background-image: url(/img/card-photo.jpg);
+  background-image: url(img/card-photo.jpg);
   background-size: cover;
 }
 .c2 {
-  background-image: url(/img/card-photo2.jpg);
+  background-image: url(img/card-photo2.jpg);
   background-size: cover;
 }
 .c3 {
-  background-image: url(/img/card-photo7.jpg);
+  background-image: url(img/card-photo7.jpg);
   background-size: cover;
 }
 .c4 {
-  background-image: url(/img/card-photo4.jpg);
+  background-image: url(img/card-photo4.jpg);
   background-size: cover;
 }
 .c5 {
-  background-image: url(/img/card-photo5.jpg);
+  background-image: url(img/card-photo5.jpg);
   background-size: cover;
   width: auto;
 }
 .c6 {
-  background-image: url(/img/card-photo6.jpg);
+  background-image: url(img/card-photo6.jpg);
   background-size: cover;
 }
 /* other projects end */
@@ -122,7 +122,7 @@ html {
   background-attachment: fixed;
 }
 .one {
-  background-image: url(/img/20220807_165214.jpg);
+  background-image: url(img/20220807_165214.jpg);
   background-size: 50%;
   background-position: left 45px bottom 200px;
   background-repeat: repeat-x;
@@ -133,7 +133,7 @@ html {
   background-attachment: fixed;
 }
 .two {
-  background-image: url(/img/fixed2.heic);
+  background-image: url(img/fixed2.heic);
   background-size: cover;
   background-position: top;
 }
@@ -143,7 +143,7 @@ html {
   background-attachment: fixed;
 }
 .three {
-  background-image: url(/img/bgme.jpg);
+  background-image: url(img/bgme.jpg);
   background-size: cover;
   background-position: center;
 }
