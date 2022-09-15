@@ -57,11 +57,10 @@ html {
 .post {
   display: flex;
   text-decoration: none;
-  color: inherit;
   position: relative;
-  padding: 2rem;
-  box-shadow: inset 0 0 0 4px #000, inset -4px -4px 0 6px #CCC;
-  background-color: #FFF;
+  padding: 5rem;
+  box-shadow: inset 0 0 0 4px #000, inset -4px -4px 0 6px #ccc;
+  background-color: #fff;
   cursor: pointer;
 }
 .post:before {
@@ -72,7 +71,7 @@ html {
   display: block;
   width: 100%;
   height: 100%;
-  background-color: #212529;
+  background-color: #2125299d;
   transform-origin: 0 bottom 0;
   transform: scaleY(0);
   transition: 0.4s ease-out;
@@ -90,11 +89,38 @@ html {
   line-height: 1.333;
   transition: 0.4s ease-out;
 }
+
+.c1 {
+  background-image: url(/img/card-photo.jpg);
+  background-size: cover;
+}
+.c2 {
+  background-image: url(/img/card-photo2.jpg);
+  background-size: cover;
+}
+.c3 {
+  background-image: url(/img/card-photo7.jpg);
+  background-size: cover;
+}
+.c4 {
+  background-image: url(/img/card-photo4.jpg);
+  background-size: cover;
+}
+.c5 {
+  background-image: url(/img/card-photo5.jpg);
+  background-size: cover;
+  width: auto;
+}
+.c6 {
+  background-image: url(/img/card-photo6.jpg);
+  background-size: cover;
+}
+/* other projects end */
 /* parralex effect */
 .bg-img {
- height: 50vh;
- width: 100%;
- background-attachment: fixed;
+  height: 50vh;
+  width: 100%;
+  background-attachment: fixed;
 }
 .one {
   background-image: url(/img/20220807_165214.jpg);
@@ -106,7 +132,7 @@ html {
   height: auto;
   width: 100%;
   background-attachment: fixed;
- }
+}
 .two {
   background-image: url(/img/fixed2.heic);
   background-size: cover;
@@ -133,30 +159,34 @@ html {
 }
 
 /* Sticky container */
-.sticky-icon  {
-	z-index:1;
-	position:fixed;
-	top:38%;
-	right:0%;
-	width:220px;
-	display:flex;
-	flex-direction:column;}  
-.sticky-icon a  {
-	transform:translate(160px,0px);
-	border-radius:50px 0px 0px 50px;
-	text-align:left;
-	margin:2px;
-	text-decoration:none;
-	text-transform:uppercase;
-	padding:10px;
-	font-size:22px;
-	font-family:'Oswald', sans-serif;
-	transition:all 0.8s;}
-.sticky-icon a:hover  {
-	color:#FFF;
-	transform:translate(0px,0px);}	
-.sticky-icon a:hover i  {
-	transform:rotate(360deg);}
+.sticky-icon {
+  z-index: 1;
+  position: fixed;
+  top: 38%;
+  right: 0%;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+}
+.sticky-icon a {
+  transform: translate(160px, 0px);
+  border-radius: 50px 0px 0px 50px;
+  text-align: left;
+  margin: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  font-size: 22px;
+  font-family: "Oswald", sans-serif;
+  transition: all 0.8s;
+}
+.sticky-icon a:hover {
+  color: #fff;
+  transform: translate(0px, 0px);
+}
+.sticky-icon a:hover i {
+  transform: rotate(360deg);
+}
 /*.search_icon a:hover i  {
 	transform:rotate(360deg);}*/
 /* .Facebook  {
@@ -172,35 +202,39 @@ html {
 	background-color:#0077B5;
 	color:#FFF;}						 */
 .sticky-icon a i {
-	/* background-color:#FFF; */
-	height:40px;
-	width:40px;
-	color:#000;
-	text-align:center;
-	line-height:40px;
-	border-radius:50%;
-	margin-right:20px;
-	transition:all 0.5s;}
-.sticky-icon a i.fa-facebook-f  {
-	color:#0DCAF0;}
-.sticky-icon a i.fa-instagram  {
-
-	color:#0DCAF0;}
-.sticky-icon a i.fa-linkedin  {
-	color:#0DCAF0;}
-.sticky-icon a i.fa-gitlab  {
-	color:#0DCAF0;} 
+  /* background-color:#FFF; */
+  height: 40px;
+  width: 40px;
+  color: #000;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  margin-right: 20px;
+  transition: all 0.5s;
+}
+.sticky-icon a i.fa-facebook-f {
+  color: #0dcaf0;
+}
+.sticky-icon a i.fa-instagram {
+  color: #0dcaf0;
+}
+.sticky-icon a i.fa-linkedin {
+  color: #0dcaf0;
+}
+.sticky-icon a i.fa-gitlab {
+  color: #0dcaf0;
+}
 #myBtn {
-	height:50px;
+  height: 50px;
   display: none;
   position: fixed;
   bottom: 20px;
   right: 30px;
   z-index: 99;
-  text-align:center;
-  padding:10px;
-  text-align:center;
-	line-height:40px;
+  text-align: center;
+  padding: 10px;
+  text-align: center;
+  line-height: 40px;
   border: none;
   outline: none;
   background-color: #1e88e5;
@@ -208,11 +242,12 @@ html {
   cursor: pointer;
   border-radius: 50%;
 }
-.fa-arrow-circle-up  {
-	font-size:30px;}
+.fa-arrow-circle-up {
+  font-size: 30px;
+}
 #myBtn:hover {
   background-color: #555;
-}			
+}
 
 /* Scroll effect */
 .section {
