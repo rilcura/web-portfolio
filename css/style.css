@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  letter-spacing: 0.04em;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #0a0a0a;
+  font-family: "Signika Negative", sans-serif;
+}
+html {
+  height: 100%;
+}
+/* hero-banner */
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 10.7em;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: lightblue;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+/* textwrite effect */
+.line-1 {
+  position: relative;
+  top: 50%;
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+/* spacer */
+.spacer {
+  min-height: 50vh;
+}
+/* project section */
+.post {
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  padding: 2rem;
+  box-shadow: inset 0 0 0 4px #000, inset -4px -4px 0 6px #CCC;
+  background-color: #FFF;
+  cursor: pointer;
+}
+.post:before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #212529;
+  transform-origin: 0 bottom 0;
+  transform: scaleY(0);
+  transition: 0.4s ease-out;
+}
+.post:hover .post-title {
+  color: #fff;
+}
+.post:hover:before {
+  transform: scaleY(1);
+}
+.post-title {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.333;
+  transition: 0.4s ease-out;
+}
+/* parralex effect */
+.bg-img {
+ height: 50vh;
+ width: 100%;
+ background-attachment: fixed;
+}
+.one {
+  background-image: url(/img/20220807_165214.jpg);
+  background-size: 50%;
+  background-position: left 45px bottom 200px;
+  background-repeat: repeat-x;
+}
+.bg-img-2 {
+  height: auto;
+  width: 100%;
+  background-attachment: fixed;
+ }
+.two {
+  background-image: url(/img/fixed2.heic);
+  background-size: cover;
+  background-position: top;
+}
+.bg-img-3 {
+  height: auto;
+  width: 100%;
+  background-attachment: fixed;
+}
+.three {
+  background-image: url(/img/bgme.jpg);
+  background-size: cover;
+  background-position: center;
+}
+/* parralex effect end */
+.bg-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 70vh;
+}
+/* personal-info */
+#personal-info p {
+  text-align: justify;
+}
+
+/* Sticky container */
+.sticky-icon  {
+	z-index:1;
+	position:fixed;
+	top:38%;
+	right:0%;
+	width:220px;
+	display:flex;
+	flex-direction:column;}  
+.sticky-icon a  {
+	transform:translate(160px,0px);
+	border-radius:50px 0px 0px 50px;
+	text-align:left;
+	margin:2px;
+	text-decoration:none;
+	text-transform:uppercase;
+	padding:10px;
+	font-size:22px;
+	font-family:'Oswald', sans-serif;
+	transition:all 0.8s;}
+.sticky-icon a:hover  {
+	color:#FFF;
+	transform:translate(0px,0px);}	
+.sticky-icon a:hover i  {
+	transform:rotate(360deg);}
+/*.search_icon a:hover i  {
+	transform:rotate(360deg);}*/
+/* .Facebook  {
+	background-color:#2C80D3;
+	color:#FFF;} */
+/* .Instagram  {
+    background-color:#FD1D1D;
+    color:#FFF;} */
+/* .GitHub  {
+	background-color:#E24329;
+	color:#FFF;}
+.LinkedIn  {
+	background-color:#0077B5;
+	color:#FFF;}						 */
+.sticky-icon a i {
+	/* background-color:#FFF; */
+	height:40px;
+	width:40px;
+	color:#000;
+	text-align:center;
+	line-height:40px;
+	border-radius:50%;
+	margin-right:20px;
+	transition:all 0.5s;}
+.sticky-icon a i.fa-facebook-f  {
+	color:#0DCAF0;}
+.sticky-icon a i.fa-instagram  {
+
+	color:#0DCAF0;}
+.sticky-icon a i.fa-linkedin  {
+	color:#0DCAF0;}
+.sticky-icon a i.fa-gitlab  {
+	color:#0DCAF0;} 
+#myBtn {
+	height:50px;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  text-align:center;
+  padding:10px;
+  text-align:center;
+	line-height:40px;
+  border: none;
+  outline: none;
+  background-color: #1e88e5;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.fa-arrow-circle-up  {
+	font-size:30px;}
+#myBtn:hover {
+  background-color: #555;
+}			
+
+/* Scroll effect */
+.section {
+  width: 100%;
+  position: relative;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+.bg1 {
+  background-color: rgba(139, 138, 138, 0.651);
+}
