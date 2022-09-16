@@ -15,7 +15,8 @@ html {
   height: 100%;
 }
 /* hero-banner */
-/* Animation */
+
+/* typewriter anim */
 .anim-typewriter {
   animation: typewriter 4s steps(44) 1s 1 normal both,
     blinkTextCursor 500ms steps(44) infinite normal;
@@ -36,6 +37,8 @@ html {
     border-right-color: transparent;
   }
 }
+/* typewriter anim end */
+
 /* textwrite effect */
 .line-1 {
   position: relative;
@@ -49,10 +52,15 @@ html {
   overflow: hidden;
   transform: translateY(-50%);
 }
+/* textwrite effect end */
+/* hero-banner end */
+
 /* spacer */
 .spacer {
   min-height: 50vh;
 }
+/* spacer end */
+
 /* project section */
 .post {
   display: flex;
@@ -114,7 +122,8 @@ html {
   background-image: url(img/card-photo6.jpg);
   background-size: cover;
 }
-/* other projects end */
+/* projects section end */
+
 /* parralex effect */
 .bg-img {
   height: 50vh;
@@ -148,14 +157,16 @@ html {
   background-position: center;
 }
 /* parralex effect end */
+
+/* Overlay for images */
 .bg-container {
   background-color: rgba(0, 0, 0, 0.5);
   min-height: 70vh;
 }
+/* Overlay for images end */
+
 /* personal-info */
-#personal-info p {
-  text-align: justify;
-}
+/* personal-info end*/
 
 /* Sticky container */
 .sticky-icon {
@@ -175,8 +186,6 @@ html {
   text-decoration: none;
   text-transform: uppercase;
   padding: 10px;
-  font-size: 22px;
-  font-family: "Oswald", sans-serif;
   transition: all 0.8s;
 }
 .sticky-icon a:hover {
@@ -186,22 +195,7 @@ html {
 .sticky-icon a:hover i {
   transform: rotate(360deg);
 }
-/*.search_icon a:hover i  {
-	transform:rotate(360deg);}*/
-/* .Facebook  {
-	background-color:#2C80D3;
-	color:#FFF;} */
-/* .Instagram  {
-    background-color:#FD1D1D;
-    color:#FFF;} */
-/* .GitHub  {
-	background-color:#E24329;
-	color:#FFF;}
-.LinkedIn  {
-	background-color:#0077B5;
-	color:#FFF;}						 */
 .sticky-icon a i {
-  /* background-color:#FFF; */
   height: 40px;
   width: 40px;
   color: #000;
@@ -247,6 +241,7 @@ html {
 #myBtn:hover {
   background-color: #555;
 }
+/* Sticky container end*/
 
 /* Scroll effect */
 .section {
@@ -261,3 +256,4 @@ html {
 .bg1 {
   background-color: rgba(139, 138, 138, 0.651);
 }
+/* Scroll effect end*/
