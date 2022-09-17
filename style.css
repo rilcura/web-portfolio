@@ -217,6 +217,18 @@ html {
 .sticky-icon a i.fa-gitlab {
   color: #0dcaf0;
 }
+.sticky-icon-m a i.fa-facebook-f {
+  color: #0dcaf0;
+}
+.sticky-icon-m a i.fa-instagram {
+  color: #0dcaf0;
+}
+.sticky-icon-m a i.fa-linkedin {
+  color: #0dcaf0;
+}
+.sticky-icon-m a i.fa-gitlab {
+  color: #0dcaf0;
+}
 #myBtn {
   height: 50px;
   display: none;
