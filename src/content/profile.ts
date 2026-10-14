@@ -1,6 +1,6 @@
 export const profile = {
   name: 'Randzel Ivan Cura', shortName: 'Ivan', title: 'Mobile & Full-Stack Engineer', location: 'New Zealand',
-  email: 'randzel.ivanc@gmail.com', linkedin: 'https://www.linkedin.com/in/rilcura', github: 'https://github.com/rilcura',
+  email: 'randzellcura@gmail.com', linkedin: 'https://www.linkedin.com/in/rilcura', github: 'https://github.com/rilcura',
   introduction: 'I build mobile experiences and the systems behind them. From banking applications to reusable components, I enjoy turning complex problems into software that people can use.',
   about: 'My work spans Android, iOS, cross-platform applications, and web systems. I bring hands-on development experience, stakeholder collaboration, and a growing understanding of how technology supports business. I’m currently pursuing a Master of Applied Management, specialising in Business Information Systems, in Auckland.',
   skills: ['.NET MAUI Blazor Hybrid', 'C#', 'Java', 'Kotlin', 'React', 'Node.js', 'Rust', 'RabbitMQ', 'Android', 'iOS'],
