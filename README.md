@@ -28,6 +28,8 @@ The shoreline, pond, tree trunks, and buildings block walking. Each landmark has
 
 Run `npm test` for movement, collision, landmark proximity, and reachability checks. These also run before deployment. World geometry and landmark positions live in `src/island-world.ts`; update the geometry alongside the artwork if the map changes.
 
+On phones, the readable **Choose a stop** directory offers all five landmarks below the movement controls. Direction and popup-close buttons have 48px targets. Project shortcuts reveal their cards even when the gallery filter hides them and the URL already points to that same project.
+
 ## Add your next project
 
 Edit `src/content/projects.ts`. Add a project with a unique `id`, a `title`, a short `summary`, your `contribution` array, and `technologies`. Choose `district: 'mobile'` or `'systems'`. It automatically appears in the project gallery, filter counts, and the district’s list. Set `featured: true` to place it before other entries.
