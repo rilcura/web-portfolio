@@ -6,6 +6,7 @@ export function useExplorer() {
   const [active,setActive]=useState(false);
   const [character,setCharacter]=useState({...spawn,direction:'down' as Direction,moving:false});
   const [visited,setVisited]=useState<string[]>([]);
+  const [selected,setSelected]=useState<string|null>(null);
   const held=useRef(new Set<Direction>());
   const stage=useRef<HTMLDivElement>(null);
   const stop=()=>held.current.clear();
@@ -34,12 +35,11 @@ export function useExplorer() {
   const start=()=>{setActive(true);stage.current?.focus({preventScroll:true});};
   const pause=()=>{stop();setActive(false);};
   const open=(id:string)=>{
-    pause();setVisited(v=>v.includes(id)?v:[...v,id]);window.location.hash=id;
-    const target=document.getElementById(id);
-    target?.setAttribute('tabindex','-1');target?.focus({preventScroll:true});target?.scrollIntoView();
+    pause();setVisited(v=>v.includes(id)?v:[...v,id]);setSelected(id);
   };
   const reset=()=>{stop();setCharacter({...spawn,direction:'down',moving:false});start();};
-  return {active,character,visited,held,stage,stop,start,pause,open,reset,nearby:nearbyLandmark(character)};
+  const close=()=>setSelected(null);
+  return {active,character,visited,held,stage,stop,start,pause,open,close,selected,reset,nearby:nearbyLandmark(character)};
 }
 export function PixelCharacter({direction,moving}:{direction:Direction;moving:boolean}) {
   return <svg className={`pixel-character facing-${direction} ${moving?'walking':''}`} viewBox="0 0 24 32" aria-hidden="true" shapeRendering="crispEdges">
