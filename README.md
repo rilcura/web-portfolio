@@ -60,6 +60,7 @@ Example:
 - `src/content/profile.ts`: introduction, contact details, qualities, and skills.
 - `src/content/career.ts`: employment and education.
 - `src/content/hobbies.ts`: add `{ title, description }` entries to replace the campfire placeholder automatically.
+- `src/content/team-moments.ts`: Career Trail team photos and captions. The featured image appears alongside the China Bank role; extra photos are in More team moments. Responsive WebP copies live in `public/images/team`; keep full-frame proportions, descriptive alt text, and only publish photos cleared for sharing.
 - The CV is intentionally marked as coming soon. When a public CV is ready, put it in `public` and replace the placeholder in `src/main.tsx` with a download link using `import.meta.env.BASE_URL`.
 
 Professional summaries are based on the owner-supplied LinkedIn export. Placeholder projects are not claims of completed work. Confidential code and product materials are excluded.
