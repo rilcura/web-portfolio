@@ -38,7 +38,7 @@ export function LandmarkPopup({id,onClose}:{id:string;onClose:()=>void}) {
     <div className="popup-content">
       {(id==='mobile'||id==='systems')&&<div className="popup-projects">{projects.filter(p=>p.district===id).sort((a,b)=>Number(b.featured)-Number(a.featured)).map(p=><ProjectCard key={p.id} project={p} idPrefix="popup-project"/>)}</div>}
       {id==='experience'&&<ol className="timeline">{career.map(c=><li key={c.company}><span className="timeline-date">{c.dates}</span><h3>{c.company}</h3><strong>{c.role}</strong><p>{c.description}</p>{c.company==='China Bank PH'&&<TeamMoments/>}</li>)}</ol>}
-      {id==='education'&&<div className="popup-education">{education.map(e=><article key={e.title}><span className="eyebrow">{e.dates}</span><h3>{e.title}</h3><p>{e.detail}</p></article>)}</div>}
+      {id==='education'&&<div className="popup-education">{education.map(e=><article key={e.title}><span className="eyebrow">{e.dates}</span><h3>{e.title}</h3><p>{e.detail}</p>{e.location&&<p className="education-location">{e.location}</p>}</article>)}</div>}
       {id==='hobbies'&&(hobbies.length?<div className="popup-education">{hobbies.map(h=><article key={h.title}><h3>{h.title}</h3><p>{h.description}</p></article>)}</div>:<div className="popup-campfire"><Landmark kind="hobbies"/><span className="eyebrow">THIS SIDE QUEST IS STILL LOADING</span><h3>Campfire stories coming soon.</h3><p>The fire is lit. The stories are still being gathered.<br/>Check back for hobbies, interests, and little adventures.</p></div>)}
     </div>
     <footer className="popup-footer"><span>Your island adventure continues right where you left it.</span><button className="button primary" onClick={onClose}>Back to the island <span aria-hidden="true">↩</span></button></footer>

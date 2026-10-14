@@ -6,7 +6,7 @@ export const career = [
   {company:'iPhiTech IT and Digital Solutions',role:'Internship Trainee',dates:'Jan 2022 — Apr 2022',description:'Converted mock-ups into responsive interfaces and maintained Shopify, WordPress, and supporting web content.'},
 ];
 export const education = [
-  {title:'Master of Applied Management',detail:'Business Information Systems · Otago Polytechnic Auckland International Campus',dates:'Jul 2026 — Jul 2028 · In progress'},
-  {title:'Bachelor of Science in Information Technology',detail:'University of the Assumption',dates:'Jun 2018 — Jun 2022'},
-  {title:'Microsoft Security Bootcamp',detail:'Security training',dates:'Oct 2024'},
+  {title:'Master of Applied Management',detail:'Business Information Systems · Otago Polytechnic Auckland International Campus',dates:'Jul 2026 — Jul 2028 · In progress',location:'Auckland, New Zealand'},
+  {title:'Bachelor of Science in Information Technology',detail:'University of the Assumption',dates:'Jun 2018 — Jun 2022',location:'San Fernando, Pampanga, Philippines'},
+  {title:'Microsoft Security Bootcamp',detail:'Security training',dates:'Oct 2024',location:''},
 ];
