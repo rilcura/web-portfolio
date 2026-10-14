@@ -6,7 +6,7 @@ Live site: https://rilcura.github.io/web-portfolio/
 
 ## Run locally
 
-Use Node.js 22 or later.
+Use Node.js 22.18 or later.
 
 ```sh
 npm ci
@@ -19,6 +19,14 @@ Open the local URL printed by Vite, including `/web-portfolio/`.
 npm run build
 npm run preview
 ```
+
+## Explore on foot
+
+Choose **Explore on foot** to focus the island. Use arrow keys or WASD to walk, and press E or Enter near a landmark to visit its section. On-screen direction buttons work with touch, mouse, or keyboard. Escape pauses movement; **Back to start** returns the character to its starting position. Leaving the exploration controls, changing tabs, or switching windows pauses movement.
+
+The shoreline, pond, tree trunks, and buildings block walking. Each landmark has a nearby visit prompt and a session-only explored checkmark. Direct landmark links and the main navigation remain available without playing. Reduced-motion preferences disable walking and scenery animations while preserving controls. No exploration data is stored or transmitted.
+
+Run `npm test` for movement, collision, landmark proximity, and reachability checks. These also run before deployment. World geometry and landmark positions live in `src/island-world.ts`; update the geometry alongside the artwork if the map changes.
 
 ## Add your next project
 
