@@ -29,3 +29,5 @@
 
 .about-portrait{margin:26px 0 0;max-width:320px;padding:8px;background:#e7edda;border:1px solid #a8bb99;border-radius:9px;box-shadow:4px 4px 0 #c5d2b4}.about-portrait img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:85% center;border-radius:5px}.about-portrait figcaption{font:11px/1.7 monospace;color:#445b3c;padding:12px 6px 5px;text-align:center}
 @media(max-width:650px){.about-portrait{max-width:290px}.about-portrait figcaption{font-size:10px}}
+
+.career-role{margin-top:20px;padding-left:16px;border-left:2px solid #cbd5bd}.career-role h4{font-size:14px;line-height:1.5;margin:0 0 5px;font-weight:600;color:var(--ink)}.career-role .career-employment{font-size:10px;margin-top:5px}.career-responsibilities{padding:0 0 0 16px;margin:10px 0 0;list-style:disc;color:var(--muted);font-size:12px;line-height:1.75}.timeline .career-responsibilities>li{padding:0;margin:0 0 8px;position:static}.timeline .career-responsibilities>li:before{content:none}.timeline .career-responsibilities>li:last-child{margin-bottom:0}

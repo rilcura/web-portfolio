@@ -74,3 +74,5 @@ The site uses local SVG artwork, system fonts, no analytics, no backend, and no 
 The About section displays the owner-supplied portrait with responsive local WebP copies in public/images/profile, a portrait frame, descriptive alt text, and lazy loading. The original photograph is preserved outside the repository. Say hello opens the email, LinkedIn and GitHub contact dialog. The decorative duck pauses during dialogs and stays still when reduced motion is enabled.
 
 Education locations were checked against the institutions' published information: [Auckland International Campus](https://auckland.op.ac.nz/enquire) and [University of the Assumption](https://web.ua.edu.ph/about/). The bootcamp location remains unspecified.
+
+Career entries group roles under each employer. Update roles, dates, employment types and responsibilities in src/content/career.ts; src/CareerTimeline.tsx renders the shared main-page and Career Trail timeline.
