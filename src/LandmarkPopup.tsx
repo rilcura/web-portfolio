@@ -3,9 +3,9 @@ import { landmarks } from './island-world';
 import { Landmark } from './Landmark';
 import { ProjectCard } from './ProjectCard';
 import { projects } from './content/projects';
-import { career, education } from './content/career';
+import { education } from './content/career';
+import { CareerTimeline } from './CareerTimeline';
 import { hobbies } from './content/hobbies';
-import { TeamMoments } from './TeamMoments';
 
 const introductions: Record<string,{eyebrow:string;text:string}> = {
   mobile:{eyebrow:'ENTER THE MOBILE LAB',text:'Small screens, big possibilities. Browse the apps and foundations taking shape on this side of the island.'},
@@ -37,7 +37,7 @@ export function LandmarkPopup({id,onClose}:{id:string;onClose:()=>void}) {
     <header className="popup-header"><Landmark kind={landmark.kind}/><div><p className="eyebrow">{intro.eyebrow}</p><h2 id="landmark-popup-title" ref={heading} tabIndex={-1}>{landmark.title}</h2><p id="landmark-popup-description">{intro.text}</p></div></header>
     <div className="popup-content">
       {(id==='mobile'||id==='systems')&&<div className="popup-projects">{projects.filter(p=>p.district===id).sort((a,b)=>Number(b.featured)-Number(a.featured)).map(p=><ProjectCard key={p.id} project={p} idPrefix="popup-project"/>)}</div>}
-      {id==='experience'&&<ol className="timeline">{career.map(c=><li key={c.company}><span className="timeline-date">{c.dates}</span><h3>{c.company}</h3><strong>{c.role}</strong><p>{c.description}</p>{c.company==='China Bank PH'&&<TeamMoments/>}</li>)}</ol>}
+      {id==='experience'&&<CareerTimeline showTeamMoments/>}
       {id==='education'&&<div className="popup-education">{education.map(e=><article key={e.title}><span className="eyebrow">{e.dates}</span><h3>{e.title}</h3><p>{e.detail}</p>{e.location&&<p className="education-location">{e.location}</p>}</article>)}</div>}
       {id==='hobbies'&&(hobbies.length?<div className="popup-education">{hobbies.map(h=><article key={h.title}><h3>{h.title}</h3><p>{h.description}</p></article>)}</div>:<div className="popup-campfire"><Landmark kind="hobbies"/><span className="eyebrow">THIS SIDE QUEST IS STILL LOADING</span><h3>Campfire stories coming soon.</h3><p>The fire is lit. The stories are still being gathered.<br/>Check back for hobbies, interests, and little adventures.</p></div>)}
     </div>
