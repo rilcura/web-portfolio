@@ -21,7 +21,9 @@ test('reads public counts, treats only missing event paths as zero, and fails cl
   const original = globalThis.fetch;
   try {
     globalThis.fetch = async (input, options) => {
-      assert.ok(String(input).endsWith('%2Fweb-portfolio.json'));
+      const url = new URL(String(input));
+      assert.ok(url.pathname.endsWith('%2Fweb-portfolio.json'));
+      assert.equal(url.searchParams.get('start'), '2026-10-01');
       assert.equal(options?.credentials, 'omit');
       assert.equal(options?.referrerPolicy, 'no-referrer');
       return new Response(JSON.stringify({count:'42'}));
