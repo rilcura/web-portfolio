@@ -1,5 +1,6 @@
 export const counterSite = 'https://rilcura-portfolio.goatcounter.com';
-export const visitPath = '/web-portfolio/';
+// GoatCounter normalises non-root paths by removing the trailing slash.
+export const visitPath = '/web-portfolio';
 export const contactPaths = ['contact-email', 'contact-linkedin', 'contact-github'] as const;
 
 // Fixed identifiers only: no URL query, referrer, screen size or contact details.
