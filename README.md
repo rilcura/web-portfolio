@@ -69,8 +69,9 @@ Professional summaries are based on the owner-supplied LinkedIn export. Placehol
 
 GitHub Pages uses the workflow in `.github/workflows/deploy.yml`. A push to `main` runs the TypeScript check, production build, and deployment. The Vite base path is `/web-portfolio/`; update it if the repository name or hosting path changes. Navigation uses section anchors and requires no server routing.
 
-The site uses local SVG artwork, system fonts, no analytics, no backend, and no autoplay audio. Reduced-motion preferences disable animation and smooth scrolling. Existing repository history is preserved.
+The site uses local SVG artwork, system fonts, aggregate visit/contact-click counters, and no autoplay audio. Reduced-motion preferences disable animation and smooth scrolling. Existing repository history is preserved.
 
 The About section displays the owner-supplied portrait with responsive local WebP copies in public/images/profile, a portrait frame, descriptive alt text, and lazy loading. The original photograph is preserved outside the repository. Say hello opens the email, LinkedIn and GitHub contact dialog. The decorative duck pauses during dialogs and stays still when reduced motion is enabled.
 
 Education locations were checked against the institutions' published information: [Auckland International Campus](https://auckland.op.ac.nz/enquire) and [University of the Assumption](https://web.ua.edu.ph/about/). The bootcamp location remains unspecified.
+Shared visit and contact-click counters use a dedicated GoatCounter site. See COUNTERS.md for counting semantics, privacy settings and maintenance.
