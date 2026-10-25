@@ -5,7 +5,7 @@ import { eventUrl, parseCount, readCount, visitPath, contactPaths } from '../src
 test('collection uses fixed page/event identifiers without visitor details', () => {
   const visit = new URL(eventUrl(visitPath));
   assert.equal(visit.origin, 'https://rilcura-portfolio.goatcounter.com');
-  assert.equal(visit.searchParams.get('p'), '/web-portfolio/');
+  assert.equal(visit.searchParams.get('p'), '/web-portfolio');
   assert.equal(visit.searchParams.get('ns'), 'true');
   assert.equal(visit.searchParams.has('e'), false);
   assert.deepEqual([...visit.searchParams.keys()].sort(), ['ns','p','t']);
@@ -21,7 +21,7 @@ test('reads public counts, treats only missing event paths as zero, and fails cl
   const original = globalThis.fetch;
   try {
     globalThis.fetch = async (input, options) => {
-      assert.ok(String(input).endsWith('%2Fweb-portfolio%2F.json'));
+      assert.ok(String(input).endsWith('%2Fweb-portfolio.json'));
       assert.equal(options?.credentials, 'omit');
       assert.equal(options?.referrerPolicy, 'no-referrer');
       return new Response(JSON.stringify({count:'42'}));
