@@ -13,7 +13,7 @@ Only fixed path names, a generic title and the no-session flag are submitted usi
 
 Verified site settings: public visitor counters enabled; dashboard only accessible to logged-in users. Individual pageviews, sessions, referrers, user-agent details, screen size, country, region and language collection are disabled. Public totals are intentionally visible, but the dashboard stays private.
 
-Local previews and headless QA do not submit events. They may read public totals. To change provider or domain update `src/counter.ts` and the hostname guard in `src/VisitCounter.tsx`. Contact URLs come from `src/content/profile.ts`. To disable all collection and display, remove `<VisitCounter/>` from `src/main.tsx`.
+Local previews do not submit events. They may read public totals. Production release verification contributes genuine test loads/clicks to the totals; these are not unique-visitor counts. A separate `qa-connection-check` event tests service connectivity and is excluded from both displayed totals. To change provider or domain update `src/counter.ts` and the hostname guard in `src/VisitCounter.tsx`. Contact URLs come from `src/content/profile.ts`. To disable all collection and display, remove `<VisitCounter/>` from `src/main.tsx`.
 
 Checks: `npm test`, `npm run build`; then verify the footer at desktop and mobile widths, click one actual contact link and check its event in the owner dashboard. Ad-blocked traffic may not count. Some browsers block mail apps when none is configured, which does not affect the event listener.
 
