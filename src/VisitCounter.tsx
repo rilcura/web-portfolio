@@ -4,8 +4,9 @@ import { contactPaths, eventUrl, readCount, visitPath } from './counter';
 
 let visitSent = false;
 function send(path: string, event = false) {
-  // Local previews and headless QA never pollute production totals.
-  if (location.hostname !== 'rilcura.github.io' || navigator.webdriver) return;
+  // Local previews never submit events. Real production browser sessions count,
+  // including release verification and visitors using browser automation.
+  if (location.hostname !== 'rilcura.github.io') return;
   void fetch(eventUrl(path, event), { method: 'POST', mode: 'no-cors',
     credentials: 'omit', referrerPolicy: 'no-referrer', keepalive: true,
   }).catch(() => {});
