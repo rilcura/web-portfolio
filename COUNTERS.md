@@ -2,6 +2,8 @@
 
 Provider: https://rilcura-portfolio.goatcounter.com/ (owner login required for the dashboard). This is separate from the owner's Marchy's Cove sites. Cloudflare is not used.
 
+Public reads explicitly start at 2026-10-01, before this dedicated site's creation, so its whole recorded history is included. This also avoids a cached pre-launch empty response. Future updates retain this start date.
+
 - `/web-portfolio`: document loads, including reloads. This is GoatCounter's canonical path without a trailing slash; the hosted site still uses `/web-portfolio/`. Hash navigation, filters and opening a popup do not add visits.
 - `contact-email`, `contact-linkedin`, `contact-github`: link activations from the contact section or popup. Keyboard activations count too. The footer adds these three event totals.
 - Counts begin at activation, not the original launch. They are approximate: blockers, failed requests, bots and manual requests affect totals. They are not unique people. Counters persist asynchronously and the public endpoint caches responses for up to four hours. Use the private dashboard for fresher numbers. No optimistic increments or write retries fabricate totals.

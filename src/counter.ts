@@ -2,6 +2,9 @@ export const counterSite = 'https://rilcura-portfolio.goatcounter.com';
 // GoatCounter normalises non-root paths by removing the trailing slash.
 export const visitPath = '/web-portfolio';
 export const contactPaths = ['contact-email', 'contact-linkedin', 'contact-github'] as const;
+// This dedicated analytics site was created in October 2026. An explicit start
+// includes its whole history and avoids the provider's pre-launch empty cache.
+export const counterStart = '2026-10-01';
 
 // Fixed identifiers only: no URL query, referrer, screen size or contact details.
 export function eventUrl(path: string, event = false): string {
@@ -19,7 +22,7 @@ export function parseCount(data: unknown): number {
 }
 
 export async function readCount(path: string, missingIsZero = false): Promise<number> {
-  const response = await fetch(`${counterSite}/counter/${encodeURIComponent(path)}.json`, {
+  const response = await fetch(`${counterSite}/counter/${encodeURIComponent(path)}.json?start=${counterStart}`, {
     credentials: 'omit', referrerPolicy: 'no-referrer', cache: 'no-store', signal: AbortSignal.timeout(6000),
   });
   // Event paths do not exist until the first click. Other failures remain unknown.
