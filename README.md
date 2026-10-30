@@ -1,6 +1,27 @@
 # Ivan’s Builder Island
 
-A responsive pixel island portfolio for Randzel Ivan Cura, Mobile & Full-Stack Engineer.
+A responsive portfolio for Randzel Ivan Cura, presenting mobile-development experience through an interactive island and a conventional project directory.
+
+## Project at a glance
+
+**Stack:** React 19, TypeScript, Vite, CSS, GitHub Pages, and GoatCounter.
+
+The implementation includes keyboard and touch exploration, collision detection, reusable project cards, focus-managed dialogs, reduced-motion behavior, and aggregate visit/contact counters. Visitors also have direct navigation without playing the island interaction.
+
+## Current scope
+
+The site includes professional contribution summaries and two clearly marked personal-project placeholders. Career summaries describe work performed in employment. They do not publish employer source code or imply ownership of those products. A downloadable CV remains planned.
+
+## Engineering evidence
+
+- [World logic](src/island-world.ts) and [tests](tests/island-world.test.ts) cover movement, collision, and landmark reachability.
+- [Counter logic](src/counter.ts) has [automated checks](tests/counter.test.ts).
+- The [deployment workflow](.github/workflows/deploy.yml) runs tests and the TypeScript/production build before publishing.
+- Project content is maintained separately from presentation components.
+
+## Portfolio improvements planned
+
+Replace the two project placeholders with demonstrated personal builds, add approved project screenshots, and publish a current CV. These are next steps, not completed features.
 
 Live site: https://rilcura.github.io/web-portfolio/
 
@@ -67,7 +88,7 @@ Professional summaries are based on the owner-supplied LinkedIn export. Placehol
 
 ## Hosting
 
-GitHub Pages uses the workflow in `.github/workflows/deploy.yml`. A push to `main` runs the TypeScript check, production build, and deployment. The Vite base path is `/web-portfolio/`; update it if the repository name or hosting path changes. Navigation uses section anchors and requires no server routing.
+GitHub Pages uses the workflow in `.github/workflows/deploy.yml`. A push to `main` runs automated tests, the TypeScript check, production build, and deployment. The Vite base path is `/web-portfolio/`; update it if the repository name or hosting path changes. Navigation uses section anchors and requires no server routing.
 
 The site uses local SVG artwork, system fonts, aggregate visit/contact-click counters, and no autoplay audio. Reduced-motion preferences disable animation and smooth scrolling. Existing repository history is preserved.
 
