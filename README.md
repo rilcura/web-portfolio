@@ -10,7 +10,7 @@ The implementation includes keyboard and touch exploration, collision detection,
 
 ## Current scope
 
-The site includes professional contribution summaries and two clearly marked personal-project placeholders. Career summaries describe work performed in employment. They do not publish employer source code or imply ownership of those products. A downloadable CV remains planned.
+The site includes professional contribution summaries, an Ivan Planner personal-project case study, and one clearly marked mobile-project placeholder. Career summaries describe work performed in employment. They do not publish employer source code or imply ownership of those products. A downloadable CV remains planned.
 
 ## Engineering evidence
 
@@ -19,9 +19,15 @@ The site includes professional contribution summaries and two clearly marked per
 - The [deployment workflow](.github/workflows/deploy.yml) runs tests and the TypeScript/production build before publishing.
 - Project content is maintained separately from presentation components.
 
+## Ivan Planner case study
+
+The published Systems & tools card replaces `next-system` and describes the deployed v0.2.0 Trello/Google Calendar integration. Its implementation and validation claims were checked against the private project's root README, Apps Script guide, and changelog. The case study distinguishes two-way scheduling of linked sessions from Trello-owned task details and completion, and records the single-board scope. Multi-board support is undeployed draft work.
+
+Only the public summary is included here. Private repository links, board/calendar identifiers, configuration, credentials, and validation artifacts are excluded. Personal-project cards use a case-study label and privacy disclosure, while career cards retain their contribution wording.
+
 ## Portfolio improvements planned
 
-Replace the two project placeholders with demonstrated personal builds, add approved project screenshots, and publish a current CV. These are next steps, not completed features.
+Replace the remaining mobile-project placeholder with a demonstrated personal build, add approved project screenshots, and publish a current CV. These are next steps, not completed features.
 
 Live site: https://rilcura.github.io/web-portfolio/
 
