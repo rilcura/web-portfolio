@@ -8,14 +8,15 @@ export const projects: Project[] = [
   {
     id:'ivan-planner',
     title:'Ivan Planner',
-    summary:'Trello and Google Calendar scheduling automation. Version 0.2.0 deployed on 26 October 2026 with a five-minute background sync.',
+    summary:'Trello and Google Calendar scheduling automation. Version 0.2.0 deployment verified on 26 October 2026, with an approximately five-minute background sync.',
     contribution:[
       'Problem: Keeping planned work sessions aligned across a task board and calendar required duplicate scheduling edits.',
       'My contribution: Built a standalone Google Apps Script integration using the Trello REST API and Google Calendar API directly, without Zapier or AI model calls.',
       'Delivered: Scheduled Trello work sessions create or update linked calendar events. Moving or resizing an existing linked event updates the Trello start time and duration. Trello owns task details and completion, with completed events retained as history.',
       'Reliability: Implemented persistent mappings and deterministic event IDs to prevent duplicate events, execution locking, conditional Calendar updates, preserved personal notes, and explicit review for conflicting edits or missing events.',
-      'Validation: 61 automated direct-sync tests covered API adapters, reconciliation, failures, recovery, timezone handling, and trigger setup. Ten real-account checks passed, followed by verified automatic trigger runs at deployment.',
-      'Scope: The deployed version connects one configured Trello board to one calendar. Multi-board support is undeployed draft work. Unrelated calendar events do not create tasks, and recurring or all-day events are unsupported.',
+      'Release evidence (26 October 2026): 61 local tests using simulated APIs and ten real-account sample checks passed. Two successful automatic trigger runs were recorded. These are historical release checks, not continuous monitoring or a fresh test run.',
+      'Scope: Version 0.2.0 connects one configured Trello board to one calendar. Multi-board support remains planned. Unrelated calendar events do not create tasks, and recurring or all-day events are unsupported.',
+      'Limits: API quotas, credential validity and workload affect operation. Runs process up to 20 sessions, so larger sets can take multiple intervals. Trello description updates retain a narrow concurrent-edit risk; conflicting edits and missing events require explicit review.',
     ],
     technologies:['JavaScript','Google Apps Script','Trello REST API','Google Calendar API','Node.js tests'],
     district:'systems',kind:'Personal project',featured:true,status:'published',

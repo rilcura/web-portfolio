@@ -21,7 +21,7 @@ The site includes professional contribution summaries, an Ivan Planner personal-
 
 ## Ivan Planner case study
 
-The published Systems & tools card replaces `next-system` and describes the deployed v0.2.0 Trello/Google Calendar integration. Its implementation and validation claims were checked against the private project's root README, Apps Script guide, and changelog. The case study distinguishes two-way scheduling of linked sessions from Trello-owned task details and completion, and records the single-board scope. Multi-board support is undeployed draft work.
+The Systems & tools card replaces `next-system` and describes the v0.2.0 Trello/Google Calendar integration whose deployment was verified on 26 October 2026. Its implementation and validation claims were checked against the private project's root README, Apps Script guide, changelog and saved release evidence. The case study distinguishes two-way scheduling of linked sessions from Trello-owned task details and completion, records the single-board scope, and discloses quota, batching and concurrent-edit limits. Multi-board support remains planned. Test counts describe recorded release validation, not fresh execution or continuous monitoring.
 
 Only the public summary is included here. Private repository links, board/calendar identifiers, configuration, credentials, and validation artifacts are excluded. Personal-project cards use a case-study label and privacy disclosure, while career cards retain their contribution wording.
 
